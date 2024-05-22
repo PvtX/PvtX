@@ -3,12 +3,10 @@ import os
 import shutil
 import socket
 from datetime import datetime
-
 import urllib3
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
 from pyrogram import filters
-
 import config
 from AnieXEricaMusic import app
 from AnieXEricaMusic.misc import HAPP, SUDOERS, XCB
@@ -19,14 +17,27 @@ from AnieXEricaMusic.utils.database import (
 )
 from AnieXEricaMusic.utils.decorators.language import language
 from AnieXEricaMusic.utils.pastebin import AMBOTBin
+import os
+import psutil
+import time
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+def monitor_memory_usage():
+    process = psutil.Process(os.getpid())
+    memory_usage = process.memory_info().rss / (1024 * 1024) 
+    if memory_usage > 500:  
+        os.system(f"kill -9 {os.getpid()} && bash start")
+
+async def background_memory_monitor():
+    while True:
+        monitor_memory_usage()
+        await asyncio.sleep(3600) 
 
 
 async def is_heroku():
     return "heroku" in socket.getfqdn()
-
-
+    
 @app.on_message(filters.command(["getlog", "logs", "getlogs"]) & SUDOERS)
 @language
 async def log_(client, message, _):
