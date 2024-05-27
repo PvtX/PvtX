@@ -29,14 +29,9 @@ async def auto_leave():
                             chat_id = i.chat.id
                             if (
                                 chat_id != config.LOGGER_ID
-                                and i.chat.id != -1001841879487
-                                and i.chat.id != -1002003559722
-                                and i.chat.id != -1002094991834
-                                and i.chat.id != -1001770030061
-                                and i.chat.id != -1001987535452
-                                and i.chat.id != -1001544173381
-                                and i.chat.id != -1001908711819
-                                and i.chat.id != -1001971743931
+                                and i.chat.id != -1001603822916
+                                and i.chat.id != -1001775986475
+                                and i.chat.id != -1001829172962
                             ):
                                 if left == 20:
                                     continue
