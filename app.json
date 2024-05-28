@@ -100,7 +100,7 @@
       },
       "AUTO_LEAVING_ASSISTANT": {
         "description": "Time after which you're assistant account will leave chats automatically. u want off use False To None Leave auto assis from groups",
-        "value": "false",
+        "value": "True",
         "required": false
       },
       "START_IMG_URL": {
