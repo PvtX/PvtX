@@ -67,15 +67,15 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
             InlineKeyboardButton(text="✚", callback_data=f"Ambot_playlist|{videoid}"),
         ],
-      [
+        [
             InlineKeyboardButton(
-                text="[🇮🇳] Aʟᴏɴᴇ", url=f"https://t.me/ALONE_WAS_BOT",
+                text="[🇮🇳] Aʟᴏɴᴇ", url=config.OWNER_USERNAME
             ),
             InlineKeyboardButton(
-                text="Cʜᴀᴛ Gʀᴏᴜᴘ", url=f"https://t.me/ClassicChatsXd",
+                text="Cʜᴀᴛ Gʀᴏᴜᴘ", url=config.SUPPORT_CHAT
             )
         ],
-         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
 
@@ -91,15 +91,15 @@ def stream_markup(_, videoid, chat_id):
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
             InlineKeyboardButton(text="✚", callback_data=f"Ambot_playlist|{videoid}"),
         ],
-      [
+        [
             InlineKeyboardButton(
-                text="[🇮🇳] Aʟᴏɴᴇ", url=f"https://t.me/ALONE_WAS_BOT",
+                text="[🇮🇳] Aʟᴏɴᴇ", url=config.OWNER_USERNAME
             ),
             InlineKeyboardButton(
-                text="Cʜᴀᴛ Gʀᴏᴜᴘ", url=f"https://t.me/ClassicChatsXd",
+                text="Cʜᴀᴛ Gʀᴏᴜᴘ", url=config.SUPPORT_CHAT
             )
         ],
-         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
 
