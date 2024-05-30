@@ -9,7 +9,7 @@ def start_panel(_):
         [
             InlineKeyboardButton(
                 text=" Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⛦",
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=truehttps://t.me/{app.username}?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users+",
+                url=f"https://t.me/{app.username}?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users+",
             )
         ],
         [
@@ -28,7 +28,7 @@ def private_panel(_):
         [
             InlineKeyboardButton(
                 text="+ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +",
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=truehttps://t.me/{app.username}?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users+",
+                url=f"https://t.me/{app.username}?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users+",
             )
         ],
         [
