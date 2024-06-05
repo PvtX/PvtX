@@ -9,7 +9,7 @@ load_dotenv()
 API_ID = int(getenv("API_ID","6435225"))
 API_HASH = getenv("API_HASH","4e984ea35f854762dcde906dce426c2d")
 BOT_TOKEN = getenv("BOT_TOKEN","5963562690:AAFjx6u04YmzTvJAgBbCpDnyYo3RDYEvV3U")
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://aloneop90021:Alone3536@cluster0.480tfna.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://public:abishnoimf@cluster0.rqk6ihd.mongodb.net/?retryWrites=true&w=majority")
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "9999"))
 LOGGER_ID = int(getenv("LOGGER_ID", "-1001603822916"))
 BOTADDLOGS = int(getenv("BOTADDLOGS", "-1001775986475")) # LOGGER_ID Id Also Use No Problem
