@@ -94,7 +94,6 @@ async def start_pm(client, message: Message, _):
             photo=config.START_IMG_URL,
             caption=_["start_2"].format(message.from_user.mention, app.mention),
             reply_markup=InlineKeyboardMarkup(out),
-            protect_content=True,
         )
         if await is_on_off(2):
             return await app.send_message(
