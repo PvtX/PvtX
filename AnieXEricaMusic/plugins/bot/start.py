@@ -96,7 +96,6 @@ async def start_pm(client, message: Message, _):
         await message.reply_sticker(
             "CAACAgUAAxkBAAEKJ05mRoqy1nAqrtPU3zug4a5qFhPWPwACAwwAAv5IIFd_SHjDg6Zx9DUE",
             disable_notification=True,
-            protect_content=True,
         )
         await message.reply_photo(
             photo=config.START_IMG_URL,
