@@ -36,8 +36,6 @@ async def start_pm(client, message: Message, _):
                 photo=config.START_IMG_URL,
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
                 reply_markup=keyboard,
-                disable_notification=True,
-                protect_content=True,
             )
         if name[0:3] == "sud":
             await sudoers_list(client=client, message=message, _=_)
@@ -48,7 +46,7 @@ async def start_pm(client, message: Message, _):
                 )
             return
         if name[0:3] == "inf":
-            m = await message.reply_text("🔎", disable_notification=True)
+            m = await message.reply_text("🔎")
             query = (str(name)).replace("info_", "", 1)
             query = f"https://www.youtube.com/watch?v={query}"
             results = VideosSearch(query, limit=1)
@@ -78,7 +76,6 @@ async def start_pm(client, message: Message, _):
                 photo=thumbnail,
                 caption=searched_text,
                 reply_markup=key,
-               # allow_sending_without_reply=True,
             )
             if await is_on_off(2):
                 return await app.send_message(
@@ -87,9 +84,7 @@ async def start_pm(client, message: Message, _):
                 )
     else:
         out = private_panel(_)
-        await message.reply_sticker(
-            "CAACAgUAAxkBAAEKJ05mRoqy1nAqrtPU3zug4a5qFhPWPwACAwwAAv5IIFd_SHjDg6Zx9DUE",
-        )
+        await message.reply_sticker("CAACAgUAAxkBAAEKJ05mRoqy1nAqrtPU3zug4a5qFhPWPwACAwwAAv5IIFd_SHjDg6Zx9DUE")
         await message.reply_photo(
             photo=config.START_IMG_URL,
             caption=_["start_2"].format(message.from_user.mention, app.mention),
@@ -100,7 +95,6 @@ async def start_pm(client, message: Message, _):
                 chat_id=config.LOGGER_ID,
                 text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ.\n\n<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
             )
-
 
 
 @app.on_message(filters.command(["start"]) & filters.group & ~BANNED_USERS)
