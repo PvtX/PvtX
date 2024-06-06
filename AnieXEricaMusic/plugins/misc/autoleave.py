@@ -9,8 +9,10 @@ from AnieXEricaMusic.core.call import AMBOT, autoend
 from AnieXEricaMusic.utils.database import get_client, is_active_chat, is_autoend
 
 async def auto_leave():
-    if config.AUTO_LEAVING_ASSISTANT:
-        while not await asyncio.sleep(400):
+    if config.AUTO_LEAVING_ASSISTANT == str(True):
+        while not await asyncio.sleep(
+            config.AUTO_LEAVE_ASSISTANT_TIME
+        ):
             from AnieXEricaMusic.core.userbot import assistants
 
             for num in assistants:
