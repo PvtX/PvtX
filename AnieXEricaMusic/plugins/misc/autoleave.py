@@ -8,7 +8,6 @@ from AnieXEricaMusic import app
 from AnieXEricaMusic.core.call import AMBOT, autoend
 from AnieXEricaMusic.utils.database import get_client, is_active_chat, is_autoend
 
-
 async def auto_leave():
     if config.AUTO_LEAVING_ASSISTANT == str(True):
         while not await asyncio.sleep(
@@ -30,8 +29,9 @@ async def auto_leave():
                             chat_id = i.chat.id
                             if (
                                 chat_id != config.LOGGER_ID
-                                and i.chat.id != -1001802990747
-                                and i.chat.id != -1001802990747
+                                and i.chat.id != -1001603822916
+                                and i.chat.id != -1001775986475
+                                and i.chat.id != -1001829172962
                             ):
                                 if left == 20:
                                     continue
