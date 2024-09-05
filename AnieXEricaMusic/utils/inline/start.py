@@ -46,7 +46,7 @@ def private_panel(_):
         ],
         [
             InlineKeyboardButton(
-                text="[❄️] Iɴᴛʀᴏᴅᴜᴄᴛɪᴏɴ [❄️]", url=f"https://t.me/AloneXEarn"
+                text="[❄️] Iɴᴛʀᴏᴅᴜᴄᴛɪᴏɴ [❄️]", url=f"https://t.me/addlist/MFlGJNbdpco3NTll"
             )
         ],
      ]
