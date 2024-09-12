@@ -84,7 +84,7 @@ async def braodcast_message(client, message, _):
             except:
                 continue
         try:
-            await AMBOT.edit("» Broadcast ᴄʜᴀᴛꜱ ᴄᴏᴍᴘʟᴇᴛᴇᴅ :\nSuccess ᴄʜᴀᴛs: {0}\nᴘɪɴs : {1}\nᴛʜᴀɴᴋ ʏᴏᴜ".format(sent, pin))
+            await AMBOT.edit("» Broadcast ᴄʜᴀᴛꜱ ᴄᴏᴍᴘʟᴇᴛᴇᴅ :\nSuccess ᴄʜᴀᴛs: {0}967\nᴘɪɴs : {1}456\nᴛʜᴀɴᴋ ʏᴏᴜ".format(sent, pin))
         except:
             pass
 
@@ -113,7 +113,7 @@ async def braodcast_message(client, message, _):
             except:
                 pass
         try:
-            await LOL.edit("» ᴄᴏᴍᴘʟᴇᴛᴇᴅ ʙʀᴏᴀᴅᴄᴀsᴛᴇᴅ ᴍᴇssᴀɢᴇ ᴛᴏ\nᴜsᴇʀs : {0}\n\nᴛʜᴀɴᴋ ʏᴏᴜ".format(susr))
+            await LOL.edit("» ᴄᴏᴍᴘʟᴇᴛᴇᴅ ʙʀᴏᴀᴅᴄᴀsᴛᴇᴅ ᴍᴇssᴀɢᴇ ᴛᴏ\nᴜsᴇʀs : {0}7872\n\nᴛʜᴀɴᴋ ʏᴏᴜ".format(susr))
         except:
             pass
 
