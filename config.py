@@ -49,9 +49,9 @@ votemode = {}
 autoclean = []
 confirmer = {}
 AMBOT = [
-    "💥",
-    "⚡️",
-    "💫",
+    "🎶 Wᴀɪᴛ Pʀᴏᴄᴇssɪɴɢ Yᴏᴜʀ Sᴏɴɢ ... Wᴀɪᴛ A Sᴇᴄ...",
+    "🎶 Wᴀɪᴛ Pʀᴏᴄᴇssɪɴɢ Yᴏᴜʀ Sᴏɴɢ ... Wᴀɪᴛ A Sᴇᴄ...",
+    "🎶 Wᴀɪᴛ Pʀᴏᴄᴇssɪɴɢ Yᴏᴜʀ Sᴏɴɢ ... Wᴀɪᴛ A Sᴇᴄ...",
 ]
 
 START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/685709ad093730507337a.jpg")
