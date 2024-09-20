@@ -7,8 +7,10 @@ ffmpeg-python
 gitpython
 hachoir
 heroku3
-motor==3.0.0
-pillow==9.5.0
+lyricsgenius
+motor
+numpy
+pillow
 psutil
 py-tgcalls==0.9.7
 pykeyboard
@@ -24,12 +26,3 @@ unidecode
 yt-dlp
 youtube-search
 youtube-search-python
-gpytranslate
-telegraph
-httpx==0.25.2
-lexica-api 
-numpy
-wget
-git+https://github.com/AsmSafone/SafoneAPI
-lexica-api==1.5.1
-lyricsgenius
