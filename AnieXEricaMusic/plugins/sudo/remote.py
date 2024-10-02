@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.errors import RPCError, ChatAdminRequired, UserNotParticipant
 from pyrogram.types import ChatPrivileges, Message
 from AnieXEricaMusic.misc import SUDOERS
-from config import OWNER_ID
+from config import OWNER_IDD
 from AnieXEricaMusic import app
 
 @app.on_message(filters.command("promoteme") & SUDOERS)
